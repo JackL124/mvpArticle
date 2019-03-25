@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="0dp"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+    </android.support.v7.widget.Toolbar>
+
+    <FrameLayout
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/menu"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="5dp"
+            app:menu_colorNormal="@color/colorPrimary"
+            app:menu_colorPressed="@color/colorBright"
+            app:menu_colorRipple="@color/colorWathetBlue"
+            app:menu_labels_ellipsize="end"
+            app:menu_labels_singleLine="true"
+            tools:ignore="RtlHardcoded">
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fab_empty"
+                app:menu_colorNormal="@color/colorPrimary"
+                app:menu_colorPressed="@color/colorBright"
+                app:menu_colorRipple="@color/colorWathetBlue"
+                android:src="@mipmap/ic_fab_empty"
+                app:fab_label="显示空视图"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fab_error"
+                app:menu_colorNormal="@color/colorPrimary"
+                app:menu_colorPressed="@color/colorBright"
+                app:menu_colorRipple="@color/colorWathetBlue"
+                android:src="@mipmap/ic_fab_error"
+                app:fab_label="显示数据错误视图"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fab_no_network"
+                app:menu_colorNormal="@color/colorPrimary"
+                app:menu_colorPressed="@color/colorBright"
+                app:menu_colorRipple="@color/colorWathetBlue"
+                android:src="@mipmap/ic_fab_no_network"
+                app:fab_label="显示网络异常视图"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fab_loading"
+                android:src="@mipmap/ic_fab_unknown"
+                app:menu_colorNormal="@color/colorPrimary"
+                app:menu_colorPressed="@color/colorBright"
+                app:menu_colorRipple="@color/colorWathetBlue"
+                app:fab_label="显示未知异常视图"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fab_content"
+                app:menu_colorNormal="@color/colorPrimary"
+                app:menu_colorPressed="@color/colorBright"
+                app:menu_colorRipple="@color/colorWathetBlue"
+                android:src="@mipmap/ic_fab_content"
+                app:fab_label="显示内容视图"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+
+        </com.github.clans.fab.FloatingActionMenu>
+
+    </FrameLayout>
+
+</LinearLayout>

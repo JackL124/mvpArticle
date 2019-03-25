@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/loading"
+        android:layout_marginTop="10dp"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        app:indicatorName="BallPulseIndicator"
+        android:layout_gravity="center"
+        app:indicatorColor="@color/colorPrimary"
+        />
+
+
+
+    <TextView
+        android:id="@+id/tv_fail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#757575"
+        android:text="加载失败，点击重试" />
+
+    <TextView
+        android:id="@+id/tv_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#757575"
+        android:text="——到底了——" />
+
+</FrameLayout>

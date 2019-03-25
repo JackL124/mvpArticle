@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="LoadStatusLayout">
+        <attr name="loadingView" format="reference"/>
+        <attr name="netErrorView" format="reference"/>
+        <attr name="dataErrorView" format="reference"/>
+        <attr name="unknownErrorView" format="reference"/>
+        <attr name="emptyView" format="reference"/>
+        <attr name="contentView" format="reference"/>
+    </declare-styleable>
+
+</resources>
